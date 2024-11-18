@@ -23,7 +23,8 @@ const App = () => {
   // Add or update employee
   const handleAddOrUpdate = (employee) => {
     if (editEmployee) {
-      setEmployees(employees.map((emp) => (emp.id === employee.id ? employee : emp)));
+      
+      
       setEditEmployee(null);
     } else {
       setEmployees([...employees, { ...employee, id: Date.now() }]);
@@ -39,6 +40,7 @@ const App = () => {
   const handleSearch = (employee) => {
     setEditEmployee(employee);
   };
+  console.log(employee)
 
   return (
     <div className="container">
