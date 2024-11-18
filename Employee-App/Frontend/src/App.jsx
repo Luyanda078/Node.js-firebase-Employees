@@ -24,7 +24,7 @@ const App = () => {
   const handleAddOrUpdate = (employee) => {
     if (editEmployee) {
       
-      
+
       setEditEmployee(null);
     } else {
       setEmployees([...employees, { ...employee, id: Date.now() }]);
@@ -40,7 +40,6 @@ const App = () => {
   const handleSearch = (employee) => {
     setEditEmployee(employee);
   };
-  console.log(employee)
 
   return (
     <div className="container">
